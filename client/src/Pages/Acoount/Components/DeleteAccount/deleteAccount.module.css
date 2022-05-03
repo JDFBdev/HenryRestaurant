@@ -1,0 +1,64 @@
+.container{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background-color: white;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.title{
+    font-family: 'Suranna', serif;
+    font-weight: lighter;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+}
+.containerDialog{
+  margin: 0 auto;
+    border: none;
+    background-color: rgb(194, 193, 193);
+    height: 100px;
+    width: 100%;
+    text-align:center;
+    font-size: 1.2rem;
+}
+
+.containerBotones {
+   width: 100%;
+  height: 10%;
+  display: flex;
+  margin: 5% auto;
+  gap: 2.5%;
+  bottom:.5px;
+}
+
+.ButtonCancel{
+  margin-bottom: 0px;
+   width: 70%;
+  height: 10%;
+  background: none;
+  border-radius: 10px;
+  padding: 2%;
+  cursor: pointer;
+font-weight: 600;
+}
+
+.ButtonCancel:hover {
+  background:red;
+}
+
+
+.ButtonConfir{
+  margin-bottom: 0px;
+   width: 70%;
+  height: 10%;
+  background: none;
+  border-radius: 10px;
+  padding: 2%;
+  cursor: pointer;
+font-weight: 600;
+}
+
+.ButtonConfir:hover{
+  background:green;
+}

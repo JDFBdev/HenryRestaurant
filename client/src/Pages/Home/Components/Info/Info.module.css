@@ -1,0 +1,285 @@
+.main {
+  margin-top: 9.6vh;
+}
+
+/* Primer modulo About */
+
+.about {
+  width: 80vw;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.Headline {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-family: "Suranna";
+  font-size: 5rem;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: center;
+}
+
+.line {
+  height: 0.2rem;
+  width: 15vw;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+}
+
+.aboutItems {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 6rem;
+}
+
+.aboutText {
+  margin-top: 2rem;
+}
+
+.h3 {
+  font-family: "Suranna";
+  font-size: 2.8rem;
+}
+
+.p {
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+}
+
+.aboutImage {
+  width: 25rem;
+  height: auto;
+}
+
+.Links {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 60%;
+  padding: 30px;
+  margin: 30px auto;
+  gap: 30px;
+  background-color: #e6e7e8;
+  border-radius: 10px;
+}
+
+.Link {
+  background: none;
+  width: 60%;
+  border: none;
+  font-size:30px;
+  cursor: pointer;
+  background-color: #bdc0c3;
+  border-radius: 5px;
+}
+
+.Link:hover {
+  background-color: #abadb1;
+  transition: all 0.5s;
+}
+
+.Label{
+  color:black;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 1255px) {
+  .aboutItems {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .aboutText {
+    margin-top: 1rem;
+  }
+
+  .h3 {
+    font-family: "Suranna";
+    font-size: 2.8rem;
+  }
+
+  .p {
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+  }
+
+  .aboutImage {
+    width: 25rem;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* Segundo Module Solutions */
+
+.module {
+  width: 80vw;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.moduleText {
+  margin-top: 1rem;
+}
+
+.subtitle {
+  font-family: "Suranna";
+  font-size: 3.5rem;
+}
+
+.moduleImage {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.moduleLine {
+  height: 0.2rem;
+  width: 65%;
+  background-color: rgba(206, 206, 206, 0.85);
+  margin: 0 auto;
+}
+
+/* Tercer Module About Us */
+
+.aboutUsItems {
+  margin-top: 2rem;
+}
+
+.aboutUsSubtitle {
+  font-family: "Montserrat";
+  font-size: 2rem;
+}
+
+.cards {
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3.5rem;
+  column-gap: 3.5rem;
+  margin-bottom: 10vh;
+}
+
+@media (max-width: 768px) {
+  /* Primer modulo About */
+
+  .about {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .aboutItems {
+    gap: 3rem;
+  }
+
+  .aboutText {
+    margin-top: 1px;
+  }
+
+  .h3 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .p {
+    font-size: 15px;
+  }
+
+  .aboutImage {
+    width: 15rem;
+    height: auto;
+    margin-top: -50px;
+  }
+
+  .line {
+    margin-top: 2rem;
+  }
+
+  /* Segundo Module Solutions */
+
+  .module {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .moduleText {
+    margin-top: 0.5px;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .moduleImage {
+    width: 90%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .moduleLine {
+    height: 0.2rem;
+    width: 60%;
+    background-color: rgba(206, 206, 206, 0.95);
+    margin: -5px auto;
+  }
+
+  /* Tercer Module About Us */
+
+  .aboutUsItems {
+    margin-top: 1rem;
+  }
+
+  .aboutUsSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .cards {
+    width: 90%;
+    margin-top: 1.5rem;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-bottom: 1.5vh;
+  }
+
+
+  .Links {
+    flex-direction: column;
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  gap: 10px;
+}
+
+.Link {
+  width: 70%;
+}
+
+.Label{
+  font-size: 20px;
+  font-weight: 400;
+}
+}

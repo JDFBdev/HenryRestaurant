@@ -1,0 +1,79 @@
+
+.mainDiv{
+    margin-left: 2rem;
+    background-color: #dbdbdb;
+    padding: 1.5rem;
+
+
+    width: 75vw;
+    max-height: 85vh;
+    border-radius: .5rem;
+}
+
+.title{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.subtitle{
+    font-family: 'Montserrat';
+
+}
+
+.products{
+    height: 83%;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+   
+
+::-webkit-scrollbar-thumb {
+    background: rgb(167, 166, 166); 
+    border-radius: 10px;
+} 
+
+
+@media(max-width: 768px){
+    
+.mainDiv{
+    margin-left: 1px;
+    padding: .5px;
+    width: 90%;
+    max-height:65vh;
+    border-radius: .5rem;
+    overflow-y: auto;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: .5rem;
+    margin-top: .3rem;
+}
+
+.subtitle{
+    font-size: 1rem;
+    margin-left: .5rem;
+
+}
+
+.products{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+}

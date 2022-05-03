@@ -1,0 +1,55 @@
+.container{
+    margin: 0 auto;
+    background-color: white;
+    width: 35vw;
+    height: 23.5vw;
+}
+
+.titleContainer{
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    height: fit-content;
+    padding-top: 1rem;
+
+}
+
+.title{
+    font-family: 'Suranna', serif;
+    font-weight: lighter;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+
+.form{
+    text-align: center;
+}
+
+.inputDiv{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: space-around;
+
+}
+
+.label{
+    font-family: 'Montserrat';
+    border: none;
+    background-color: rgb(194, 193, 193);
+    height: 1.9rem;
+    width: 30%;
+    outline: none;
+    padding-top: .2rem;
+}
+
+.input{
+    border: none;
+    background-color: rgb(194, 193, 193);
+    height: 1.9rem;
+    width: 30%;
+    outline: none;
+    font-family: 'Montserrat';
+    padding-left: .3rem;
+}

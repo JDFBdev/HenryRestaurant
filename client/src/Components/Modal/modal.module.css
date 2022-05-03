@@ -1,0 +1,33 @@
+.modal {
+  display: none;
+}
+
+.isOpen {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1.3s;
+}
+.container {
+  position: relative;
+
+  overflow-y: hidden;
+  padding:1rem;
+}
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  font-size: 1rem;
+  width: 7%;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+}
