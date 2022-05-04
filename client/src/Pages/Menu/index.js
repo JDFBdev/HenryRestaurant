@@ -22,8 +22,8 @@ export const Menu = () => {
     const [isOpenProductDetail, openProductDetail, closeProductDetail] = useModal();
     const [isOpenComent, openComent, closeComent] = useModal();
     const [isOpenCreateComent, openCreateComent, closeCreateComent] = useModal();
-    const { loading, data, error } = useQuery(Queries.ALL_PRODUCTS)
-    const [idProduct, setIdProduct] = useState(null)
+    const { loading, data, error } = useQuery(Queries.ALL_PRODUCTS);
+    const [idProduct, setIdProduct] = useState(null);
 
     if (loading) {
         return (

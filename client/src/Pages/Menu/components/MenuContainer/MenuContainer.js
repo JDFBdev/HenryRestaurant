@@ -4,8 +4,6 @@ import { ProductCard } from "../ProductCard/ProductCard";
 
 export const MenuContainer = ({ products, modalControl, productId }) => {
 
-    console.log(products)
-
     let main = products.filter(p=> p.category === 'main')
     let sides = products.filter(p=> p.category === 'sides')
     let beverages = products.filter(p=> p.category === 'beverages')
@@ -14,8 +12,7 @@ export const MenuContainer = ({ products, modalControl, productId }) => {
     let arranged = main.concat(sides);
     arranged = arranged.concat(beverages);
     arranged = arranged.concat(dessert)
-
-    console.log(products)
+    
     return (
         <main id="menu" className="">
             <div className="menu">

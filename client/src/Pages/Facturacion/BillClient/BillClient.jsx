@@ -20,7 +20,6 @@ const BillClient = () => {
   //todo RESIVO LOS DATOS DE CADA PRODUCTO
 
   const billClient = result.data;
-  console.log('FACTURA CLIENTE', billClient);
 
   return (
     <div>

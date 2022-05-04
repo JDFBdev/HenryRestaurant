@@ -8,25 +8,26 @@ import { GrView, GrContact, GrChatOption } from 'react-icons/gr';
 import ReactTooltip from 'react-tooltip';
 import Transsition from '../../../../Hooks/Transsition';
 import routes from '../../../../Helpers/Routes';
-import Loading from '../../../../Components/Loading/Loading';
-import { useNavigate } from 'react-router-dom';
 import useAuth from '../../../../Auth/useAuth';
 import toast from 'react-hot-toast';
 
 const ProductDetail = ({ openCreateCom, openComment, productId, modalControl,close }) => {
 
-  const { isLogged, hasRole } = useAuth()
+  const { hasRole } = useAuth()
   const url = window.location.href.slice(35);
   const [newLike, setNewLike] = useState(null)
   const [getProduct, { loading, error, data }] = useLazyQuery(Queries.FIND_PRODUCT);
-  const navigate = useNavigate();
-
 
   const [ProductLike] = useMutation(Mutations.LIKE_PRODUCTS, {
     refetchQueries: [{ query: Queries.ALL_PRODUCTS }],
     onError: error => { console.log(error.graphQLErrors[0].message) }
   });
-  
+
+  useEffect(() => {
+    return () => {
+     
+    };
+  });
   
   const [DeleteProduct] = useMutation(Mutations.DELETE_PRODUCT, {
     refetchQueries: [{ query: Queries.ALL_PRODUCTS }],
@@ -34,7 +35,7 @@ const ProductDetail = ({ openCreateCom, openComment, productId, modalControl,clo
   });
 
   useEffect(() => {
-    getProduct({ variables: { input: { id: `${productId}` } } })
+    getProduct({ variables: { input: { id: `${productId}` } }})
   }, [getProduct, productId])
 
   const handleLike = async e => {

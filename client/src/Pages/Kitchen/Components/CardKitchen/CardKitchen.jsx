@@ -60,8 +60,6 @@ const CardKitchen = ({ info, infoKitchen, close }) => {
   let b = new Date(`${info.fechaEntrega}`);
   var c = (a - b);
   const minutos = Math.abs(parseInt(c / 1000 / 60))
-  console.log(info.fechaEntrega);
-  console.log(minutos);
 
   return (
     <Transsition>

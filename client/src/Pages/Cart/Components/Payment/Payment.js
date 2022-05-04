@@ -7,7 +7,7 @@ const PayPalButton = window.paypal.Buttons.driver("react", { React, ReactDOM });
 export default function Payment({ total }) {
 
     const createOrder = (data, actions) => {
-        console.log(data, 'CREATE');
+        
         return actions.order.create({
             purchase_units: [
                 {
@@ -24,7 +24,7 @@ export default function Payment({ total }) {
     const onApprove = async (data, actions) => {
 
         const order = await actions.order.capture();
-        console.log(order);
+        
     }
 
     return (

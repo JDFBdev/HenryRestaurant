@@ -32,7 +32,7 @@ const AuthProvider = ({ children }) => {
   const btnValidate = function (tipoDePedido, mesa, address, valor) {
    
     
-    console.log(tipoDePedido, mesa, address,valor,'PROVA');
+    
     
     if (tipoDePedido === 'salon' && mesa && valor){
       return true;
