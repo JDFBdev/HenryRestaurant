@@ -44,7 +44,7 @@ const cards = [
 
 export default function Info() {
     const [scrollPosition, setScrollPosition] = useState(0);
-    const url = window.location.href.slice(21);
+    const url = window.location.href.slice(35);
 
 
     const handleScroll = () => {              // Cosas del scroll fijo para home

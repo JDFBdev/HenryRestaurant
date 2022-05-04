@@ -16,7 +16,7 @@ import toast from 'react-hot-toast';
 const ProductDetail = ({ openCreateCom, openComment, productId, modalControl,close }) => {
 
   const { isLogged, hasRole } = useAuth()
-  const url = window.location.href.slice(21);
+  const url = window.location.href.slice(35);
   const [newLike, setNewLike] = useState(null)
   const [getProduct, { loading, error, data }] = useLazyQuery(Queries.FIND_PRODUCT);
   const navigate = useNavigate();

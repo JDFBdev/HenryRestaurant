@@ -4,7 +4,7 @@ import Cards from '../Cards/Cards';
 import routes from '../../../../Helpers/Routes';
 
 export default function OrderMenu({products, setProductID, openModalProduct}) {
-    const url = window.location.href.slice(21);
+    const url = window.location.href.slice(35);
     
 
     return(

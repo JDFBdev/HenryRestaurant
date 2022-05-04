@@ -16,7 +16,7 @@ export default function NavBar({ openLogin, openRegister }) {
     const login = isLogged()
 
     const navigate = useNavigate();
-    const url = window.location.href.slice(21);
+    const url = window.location.href.slice(35);
 
     const handleLogout = (e) => {
         e.preventDefault();

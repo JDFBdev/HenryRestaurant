@@ -15,7 +15,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 
 export default function Home() {
     const navigate = useNavigate();
-    const url = window.location.href.slice(21);
+    const url = window.location.href.slice(35);
     const [isOpenModalLogin, openLogin, closeLogin] = useModal();
     const [isOpenModalRegister, openRegister, closeRegister] = useModal();
 

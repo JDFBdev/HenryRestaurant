@@ -11,7 +11,7 @@ import routes from '../../../Helpers/Routes';
 
 export default function SignUpForm({ close }) {
 
-    const url = window.location.href.slice(21);
+    const url = window.location.href.slice(35);
 
     const [RegisterUsers] = useMutation(Mutations.REGISTER_USERS, {
         onError: err => {
